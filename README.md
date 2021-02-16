@@ -6,9 +6,9 @@ Endpoints for geolocation data based on IP or URL
 ## Getting Started
 This project works on **Python 3+** and Django 2+.
 
-Create free API KEY from https://ipstack.com and update ```ACCESS_KEY``` field in ```.env.dev``` file with your key.
+1. Create free API KEY from https://ipstack.com and update ```ACCESS_KEY``` field in ```.env.dev``` file with your key.
 
-Build the project by following command:
+2. Build the project by following command:
 
 ```
 docker-compose build
@@ -20,17 +20,17 @@ and run the containers:
 docker-compose up
 ```
 
-Navigate to http://localhost:8000/api/user/create to create a new user.
+3. Create a new user by navigating to http://localhost:8000/api/user/create.
 
-Once a new user created generate JWT token by navigating to http://localhost:8000/api/user/token
+4. Once a new user created generate JWT token by navigating to http://localhost:8000/api/user/token
 
-Copy the ```access``` and put it to your headers like below:
+5. Copy the ```access``` and put it to your headers like below:
 
 ``` Bearer <YOUR_ACCESS_KEY> ```
 
 We recommend to use ModHeader extension to manage headers in Chrome
 
-Finally, navigate to http://localhost:8000/api
+6. Finally, navigate to http://localhost:8000/api to access endpoints
 
 ## Endpoints
 The endpoints are:
@@ -46,3 +46,4 @@ You can run all tests by following command:
 
 ## Live Preview on Heroku
 You can visit the link below too see it in production:
+https://find-geolocation.herokuapp.com/api/
