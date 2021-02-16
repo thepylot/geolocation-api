@@ -7,7 +7,7 @@ class GeoLocationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = GeoLocation
-        exclude = ('user',)
+        exclude = ('user', 'id',)
         read_only_fields = ('id', 'user', 'country_name', 'region_code', 'city', 'latitude', 'longitude', 'zip_code',)
     
     def validate_ip(self, ip):

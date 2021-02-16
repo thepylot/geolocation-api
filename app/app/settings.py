@@ -26,8 +26,7 @@ SECRET_KEY = 'zh84#0dk=flg4n*hso4t-k3q-%uot7d36)ct5gmoys2v08z2v8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'find-geolocation.herokuapp.com']
-
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -44,7 +43,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
